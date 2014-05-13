@@ -13,9 +13,28 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        int p,d,isprime;
         
+        for(p=2;p<=100;++p)
+        {
+            isprime = YES;
+            
+        
+        for(d=2;d<p;++d)
+        {
+            if(p % d == 0)
+            {
+                isprime = 0;
+            }
+        }
+        if(isprime != 0)
+        {
+            
+            NSLog(@"%i",p);
+              
+        }
+       
+        }
     }
     return 0;
 }
